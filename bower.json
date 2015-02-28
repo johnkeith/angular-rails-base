@@ -1,0 +1,10 @@
+{
+  "name": "angular_rails_base",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.2.0",
+    "angular": "1.3.14",
+    "angular-resource": "1.3.14",
+    "angular-bootstrap": "0.12.0"
+  }
+}
