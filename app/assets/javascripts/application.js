@@ -19,7 +19,7 @@
 
 //= require angular-rails-templates
 
-//= require controllers/indexController
+//= require_tree ../../../angular/controllers
 //= require_tree ../../../angular/views
 //= require angularMainApp
 
