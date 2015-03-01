@@ -25,12 +25,5 @@ angularMainApp.config(configFunction);
 //controllers
 angularMainApp.controller('indexController', indexController);
 
-// angularMainApp.controller('indexController', ['$scope', '$compile', '$http',
-//   function($scope, $compile, $http){
-//     $scope.something = "Something";
-//   }
-// ])
-
-
 //directives
 // angularMainApp.directive('a', aPrevDefault);
