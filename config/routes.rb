@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   
   # will need to place API endpoints above wildcard below
   
-  match "*path" => "application#index"
+  match "*path" => "application#index", via: [:get]
 end
