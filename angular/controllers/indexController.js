@@ -1,5 +1,3 @@
-var indexController = function($scope, $compile, $http){
-	$scope.viewTest = "This is my view test."
-};
+var indexController = function($scope, $compile, $http){};
 
 indexController.$inject = ['$scope', '$compile', '$http'];

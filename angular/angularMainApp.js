@@ -13,9 +13,6 @@ var configFunction = function($routeProvider, $httpProvider, $locationProvider) 
   $routeProvider.when('/', {
     templateUrl: 'views/angularIndex.html',
     controller: 'indexController'
-  }).when('/test', {
-    templateUrl: 'views/test.html',
-    controller: 'testController'
   }).otherwise( { redirectTo: '/'});
 }
 
@@ -27,7 +24,3 @@ angularMainApp.config(configFunction);
 
 //controllers
 angularMainApp.controller('indexController', indexController);
-angularMainApp.controller('testController', testController);
-
-//directives
-// angularMainApp.directive('a', aPrevDefault);
