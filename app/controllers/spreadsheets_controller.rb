@@ -1,4 +1,4 @@
-class SpreadsheetController < ApplicationController\
+class SpreadsheetsController < ApplicationController\
 	respond_with :json
 
 	def upload
