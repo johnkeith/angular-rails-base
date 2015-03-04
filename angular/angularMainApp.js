@@ -28,3 +28,4 @@ angularMainApp.config(configFunction);
 
 //controllers
 angularMainApp.controller('indexController', indexController);
+angularMainApp.controller('uploadsController', uploadsController);
