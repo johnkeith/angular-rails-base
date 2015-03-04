@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
 
+# to ensure asset pipeline happiness with Angular templates
 gem 'angular-rails-templates'
 
 # for spreadsheet parsing
