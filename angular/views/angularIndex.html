@@ -1,1 +1,5 @@
 <p>{{ "Angular is working!" }}</p>
+
+<div ng-controller='uploadsController'>
+	<button class="btn btn-primary" ng-file-select ng-file-change="upload($files)">Upload Files</button>
+</div>
