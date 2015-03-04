@@ -13,3 +13,8 @@ gem 'angular-rails-templates'
 
 # for spreadsheet parsing
 gem 'roo'
+
+group :development, :test do
+	gem 'pry'
+	gem 'pry-rails'	
+end
