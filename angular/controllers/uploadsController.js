@@ -5,6 +5,8 @@ var uploadsController = function($scope, $upload){
         url: '/api/upload_spreadsheet',
         method: 'POST',
         file: file,
+      }).success(function (data, status, headers, config){
+      	console.log(data);
       });
 		})
 	}
