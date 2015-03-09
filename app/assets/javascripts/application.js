@@ -18,6 +18,7 @@
 //= require angular-bootstrap/ui-bootstrap
 //= require ng-file-upload/angular-file-upload
 //= require ng-file-upload/angular-file-upload-shim
+//= require ng-grid/ng-grid-2.0.13.debug
 
 //= require angular-rails-templates
 
