@@ -3,7 +3,8 @@ class SpreadsheetsController < ApplicationController
 
 	def upload_and_parse
 		sheet_as_json = parse_spreadsheet(upload(params[:file]))
-		
+		sheet_as_json = convert_json_for_ng_grid(sheet_as_json)
+
 		render json: sheet_as_json, status: :ok
 	end
 
@@ -26,6 +27,28 @@ class SpreadsheetsController < ApplicationController
 		elsif file_path.include? ".ods"
 			sheet = Roo::OpenOffice.new(file_path)
 		end
+
 		sheet.to_json
+	end
+
+	def convert_json_for_ng_grid(sheet_as_json)
+		sheet_as_json = JSON.parse sheet_as_json
+		
+		json_for_ng_grid = []
+		
+		headers = sheet_as_json.first
+
+		sheet_as_json.each_with_index do |row, index|
+			next if index == 0
+			
+			object = Hash.new
+			
+			headers.each_with_index do |h, i|
+				object[h] = row[i]
+			end
+			
+			json_for_ng_grid << object
+		end
+		json_for_ng_grid
 	end
 end
